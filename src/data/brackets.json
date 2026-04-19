@@ -1,0 +1,530 @@
+[
+  {
+    "name": "Ford",
+    "east": {
+      "first": [
+        {
+          "team1": "Detroit Pistons",
+          "team2": "Orlando Magic",
+          "winner": "Detroit Pistons"
+        },
+        {
+          "team1": "Cleveland Cavaliers",
+          "team2": "Toronto Raptors",
+          "winner": "Cleveland Cavaliers"
+        },
+        {
+          "team1": "Boston Celtics",
+          "team2": "Philadelphia 76ers",
+          "winner": "Boston Celtics"
+        },
+        {
+          "team1": "New York Knicks",
+          "team2": "Atlanta Hawks",
+          "winner": "New York Knicks"
+        }
+      ],
+      "second": [
+        {
+          "team1": "Detroit Pistons",
+          "team2": "Cleveland Cavaliers",
+          "winner": "Detroit Pistons"
+        },
+        {
+          "team1": "Boston Celtics",
+          "team2": "New York Knicks",
+          "winner": "New York Knicks"
+        }
+      ],
+      "finals": {
+        "team1": "Detroit Pistons",
+        "team2": "New York Knicks",
+        "winner": "Detroit Pistons"
+      },
+      "champion": "Detroit Pistons"
+    },
+    "west": {
+      "first": [
+        {
+          "team1": "Oklahoma City Thunder",
+          "team2": "Phoenix Suns",
+          "winner": "Oklahoma City Thunder"
+        },
+        {
+          "team1": "LA Lakers",
+          "team2": "Houston Rockets",
+          "winner": "LA Lakers"
+        },
+        {
+          "team1": "San Antonio Spurs",
+          "team2": "Portland Trail Blazers",
+          "winner": "San Antonio Spurs"
+        },
+        {
+          "team1": "Denver Nuggets",
+          "team2": "Minnesota Timberwolves",
+          "winner": "Denver Nuggets"
+        }
+      ],
+      "second": [
+        {
+          "team1": "Oklahoma City Thunder",
+          "team2": "LA Lakers",
+          "winner": "Oklahoma City Thunder"
+        },
+        {
+          "team1": "San Antonio Spurs",
+          "team2": "Denver Nuggets",
+          "winner": "San Antonio Spurs"
+        }
+      ],
+      "finals": {
+        "team1": "Oklahoma City Thunder",
+        "team2": "San Antonio Spurs",
+        "winner": "San Antonio Spurs"
+      },
+      "champion": "San Antonio Spurs"
+    },
+    "finals": { "champion": "San Antonio Spurs" }
+  },
+  {
+    "name": "Jerilyn",
+    "east": {
+      "first": [
+        {
+          "team1": "Detroit Pistons",
+          "team2": "Orlando Magic",
+          "winner": "Detroit Pistons"
+        },
+        {
+          "team1": "Cleveland Cavaliers",
+          "team2": "Toronto Raptors",
+          "winner": "Cleveland Cavaliers"
+        },
+        {
+          "team1": "Boston Celtics",
+          "team2": "Philadelphia 76ers",
+          "winner": "Boston Celtics"
+        },
+        {
+          "team1": "New York Knicks",
+          "team2": "Atlanta Hawks",
+          "winner": "New York Knicks"
+        }
+      ],
+      "second": [
+        {
+          "team1": "Detroit Pistons",
+          "team2": "Cleveland Cavaliers",
+          "winner": "Detroit Pistons"
+        },
+        {
+          "team1": "Boston Celtics",
+          "team2": "New York Knicks",
+          "winner": "New York Knicks"
+        }
+      ],
+      "finals": {
+        "team1": "Detroit Pistons",
+        "team2": "New York Knicks",
+        "winner": "New York Knicks"
+      },
+      "champion": "New York Knicks"
+    },
+    "west": {
+      "first": [
+        {
+          "team1": "Oklahoma City Thunder",
+          "team2": "Phoenix Suns",
+          "winner": "Oklahoma City Thunder"
+        },
+        {
+          "team1": "LA Lakers",
+          "team2": "Houston Rockets",
+          "winner": "Houston Rockets"
+        },
+        {
+          "team1": "San Antonio Spurs",
+          "team2": "Portland Trail Blazers",
+          "winner": "San Antonio Spurs"
+        },
+        {
+          "team1": "Denver Nuggets",
+          "team2": "Minnesota Timberwolves",
+          "winner": "Denver Nuggets"
+        }
+      ],
+      "second": [
+        {
+          "team1": "Oklahoma City Thunder",
+          "team2": "Houston Rockets",
+          "winner": "Oklahoma City Thunder"
+        },
+        {
+          "team1": "San Antonio Spurs",
+          "team2": "Denver Nuggets",
+          "winner": "Denver Nuggets"
+        }
+      ],
+      "finals": {
+        "team1": "Oklahoma City Thunder",
+        "team2": "Denver Nuggets",
+        "winner": "Oklahoma City Thunder"
+      },
+      "champion": "Oklahoma City Thunder"
+    },
+    "finals": { "champion": "Oklahoma City Thunder" }
+  },
+  {
+    "name": "Jasmine",
+    "east": {
+      "first": [
+        {
+          "team1": "Detroit Pistons",
+          "team2": "Orlando Magic",
+          "winner": "Detroit Pistons"
+        },
+        {
+          "team1": "Cleveland Cavaliers",
+          "team2": "Toronto Raptors",
+          "winner": "Toronto Raptors"
+        },
+        {
+          "team1": "Boston Celtics",
+          "team2": "Philadelphia 76ers",
+          "winner": "Boston Celtics"
+        },
+        {
+          "team1": "New York Knicks",
+          "team2": "Atlanta Hawks",
+          "winner": "New York Knicks"
+        }
+      ],
+      "second": [
+        {
+          "team1": "Detroit Pistons",
+          "team2": "Toronto Raptors",
+          "winner": "Detroit Pistons"
+        },
+        {
+          "team1": "Boston Celtics",
+          "team2": "New York Knicks",
+          "winner": "New York Knicks"
+        }
+      ],
+      "finals": {
+        "team1": "Detroit Pistons",
+        "team2": "New York Knicks",
+        "winner": "New York Knicks"
+      },
+      "champion": "New York Knicks"
+    },
+    "west": {
+      "first": [
+        {
+          "team1": "Oklahoma City Thunder",
+          "team2": "Phoenix Suns",
+          "winner": "Oklahoma City Thunder"
+        },
+        {
+          "team1": "LA Lakers",
+          "team2": "Houston Rockets",
+          "winner": "Houston Rockets"
+        },
+        {
+          "team1": "San Antonio Spurs",
+          "team2": "Portland Trail Blazers",
+          "winner": "San Antonio Spurs"
+        },
+        {
+          "team1": "Denver Nuggets",
+          "team2": "Minnesota Timberwolves",
+          "winner": "Denver Nuggets"
+        }
+      ],
+      "second": [
+        {
+          "team1": "Oklahoma City Thunder",
+          "team2": "Houston Rockets",
+          "winner": "Oklahoma City Thunder"
+        },
+        {
+          "team1": "San Antonio Spurs",
+          "team2": "Denver Nuggets",
+          "winner": "Denver Nuggets"
+        }
+      ],
+      "finals": {
+        "team1": "Oklahoma City Thunder",
+        "team2": "Denver Nuggets",
+        "winner": "Oklahoma City Thunder"
+      },
+      "champion": "Oklahoma City Thunder"
+    },
+    "finals": { "champion": "Oklahoma City Thunder" }
+  },
+  {
+    "name": "Helen",
+    "east": {
+      "first": [
+        {
+          "team1": "Detroit Pistons",
+          "team2": "Orlando Magic",
+          "winner": "Detroit Pistons"
+        },
+        {
+          "team1": "Cleveland Cavaliers",
+          "team2": "Toronto Raptors",
+          "winner": "Cleveland Cavaliers"
+        },
+        {
+          "team1": "Boston Celtics",
+          "team2": "Philadelphia 76ers",
+          "winner": "Boston Celtics"
+        },
+        {
+          "team1": "New York Knicks",
+          "team2": "Atlanta Hawks",
+          "winner": "New York Knicks"
+        }
+      ],
+      "second": [
+        {
+          "team1": "Detroit Pistons",
+          "team2": "Cleveland Cavaliers",
+          "winner": "Detroit Pistons"
+        },
+        {
+          "team1": "Boston Celtics",
+          "team2": "New York Knicks",
+          "winner": "Boston Celtics"
+        }
+      ],
+      "finals": {
+        "team1": "Detroit Pistons",
+        "team2": "Boston Celtics",
+        "winner": "Boston Celtics"
+      },
+      "champion": "Boston Celtics"
+    },
+    "west": {
+      "first": [
+        {
+          "team1": "Oklahoma City Thunder",
+          "team2": "Phoenix Suns",
+          "winner": "Oklahoma City Thunder"
+        },
+        {
+          "team1": "LA Lakers",
+          "team2": "Houston Rockets",
+          "winner": "Houston Rockets"
+        },
+        {
+          "team1": "San Antonio Spurs",
+          "team2": "Portland Trail Blazers",
+          "winner": "San Antonio Spurs"
+        },
+        {
+          "team1": "Denver Nuggets",
+          "team2": "Minnesota Timberwolves",
+          "winner": "Denver Nuggets"
+        }
+      ],
+      "second": [
+        {
+          "team1": "Oklahoma City Thunder",
+          "team2": "Houston Rockets",
+          "winner": "Oklahoma City Thunder"
+        },
+        {
+          "team1": "San Antonio Spurs",
+          "team2": "Denver Nuggets",
+          "winner": "Denver Nuggets"
+        }
+      ],
+      "finals": {
+        "team1": "Oklahoma City Thunder",
+        "team2": "Denver Nuggets",
+        "winner": "Oklahoma City Thunder"
+      },
+      "champion": "Oklahoma City Thunder"
+    },
+    "finals": { "champion": "Oklahoma City Thunder" }
+  },
+  {
+    "name": "Lizzie",
+    "east": {
+      "first": [
+        {
+          "team1": "Detroit Pistons",
+          "team2": "Orlando Magic",
+          "winner": "Detroit Pistons"
+        },
+        {
+          "team1": "Cleveland Cavaliers",
+          "team2": "Toronto Raptors",
+          "winner": "Cleveland Cavaliers"
+        },
+        {
+          "team1": "Boston Celtics",
+          "team2": "Philadelphia 76ers",
+          "winner": "Boston Celtics"
+        },
+        {
+          "team1": "New York Knicks",
+          "team2": "Atlanta Hawks",
+          "winner": "Atlanta Hawks"
+        }
+      ],
+      "second": [
+        {
+          "team1": "Detroit Pistons",
+          "team2": "Cleveland Cavaliers",
+          "winner": "Detroit Pistons"
+        },
+        {
+          "team1": "Boston Celtics",
+          "team2": "Atlanta Hawks",
+          "winner": "Boston Celtics"
+        }
+      ],
+      "finals": {
+        "team1": "Detroit Pistons",
+        "team2": "Boston Celtics",
+        "winner": "Boston Celtics"
+      },
+      "champion": "Boston Celtics"
+    },
+    "west": {
+      "first": [
+        {
+          "team1": "Oklahoma City Thunder",
+          "team2": "Phoenix Suns",
+          "winner": "Oklahoma City Thunder"
+        },
+        {
+          "team1": "LA Lakers",
+          "team2": "Houston Rockets",
+          "winner": "LA Lakers"
+        },
+        {
+          "team1": "San Antonio Spurs",
+          "team2": "Portland Trail Blazers",
+          "winner": "San Antonio Spurs"
+        },
+        {
+          "team1": "Denver Nuggets",
+          "team2": "Minnesota Timberwolves",
+          "winner": "Denver Nuggets"
+        }
+      ],
+      "second": [
+        {
+          "team1": "Oklahoma City Thunder",
+          "team2": "LA Lakers",
+          "winner": "Oklahoma City Thunder"
+        },
+        {
+          "team1": "San Antonio Spurs",
+          "team2": "Denver Nuggets",
+          "winner": "Denver Nuggets"
+        }
+      ],
+      "finals": {
+        "team1": "Oklahoma City Thunder",
+        "team2": "Denver Nuggets",
+        "winner": "Oklahoma City Thunder"
+      },
+      "champion": "Oklahoma City Thunder"
+    },
+    "finals": { "champion": "Oklahoma City Thunder" }
+  },
+  {
+    "name": "Leann",
+    "east": {
+      "first": [
+        {
+          "team1": "Detroit Pistons",
+          "team2": "Orlando Magic",
+          "winner": "Detroit Pistons"
+        },
+        {
+          "team1": "Cleveland Cavaliers",
+          "team2": "Toronto Raptors",
+          "winner": "Cleveland Cavaliers"
+        },
+        {
+          "team1": "Boston Celtics",
+          "team2": "Philadelphia 76ers",
+          "winner": "Boston Celtics"
+        },
+        {
+          "team1": "New York Knicks",
+          "team2": "Atlanta Hawks",
+          "winner": "New York Knicks"
+        }
+      ],
+      "second": [
+        {
+          "team1": "Detroit Pistons",
+          "team2": "Cleveland Cavaliers",
+          "winner": "Detroit Pistons"
+        },
+        {
+          "team1": "Boston Celtics",
+          "team2": "New York Knicks",
+          "winner": "Boston Celtics"
+        }
+      ],
+      "finals": {
+        "team1": "Detroit Pistons",
+        "team2": "Boston Celtics",
+        "winner": "Detroit Pistons"
+      },
+      "champion": "Detroit Pistons"
+    },
+    "west": {
+      "first": [
+        {
+          "team1": "Oklahoma City Thunder",
+          "team2": "Phoenix Suns",
+          "winner": "Oklahoma City Thunder"
+        },
+        {
+          "team1": "LA Lakers",
+          "team2": "Houston Rockets",
+          "winner": "Houston Rockets"
+        },
+        {
+          "team1": "San Antonio Spurs",
+          "team2": "Portland Trail Blazers",
+          "winner": "San Antonio Spurs"
+        },
+        {
+          "team1": "Denver Nuggets",
+          "team2": "Minnesota Timberwolves",
+          "winner": "Denver Nuggets"
+        }
+      ],
+      "second": [
+        {
+          "team1": "Oklahoma City Thunder",
+          "team2": "Houston Rockets",
+          "winner": "Oklahoma City Thunder"
+        },
+        {
+          "team1": "San Antonio Spurs",
+          "team2": "Denver Nuggets",
+          "winner": "San Antonio Spurs"
+        }
+      ],
+      "finals": {
+        "team1": "Oklahoma City Thunder",
+        "team2": "San Antonio Spurs",
+        "winner": "Oklahoma City Thunder"
+      },
+      "champion": "Oklahoma City Thunder"
+    },
+    "finals": { "champion": "Oklahoma City Thunder" }
+  }
+]
