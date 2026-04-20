@@ -85,7 +85,7 @@
       },
       "champion": "Oklahoma City Thunder"
     },
-    "finals": { "champion": "Oklahoma City Thunder" }
+    "finals": { "champion": "Oklahoma City Thunder", "pointsGuess": null }
   },
   {
     "name": "Jasmine",
@@ -173,7 +173,7 @@
       },
       "champion": "Oklahoma City Thunder"
     },
-    "finals": { "champion": "Oklahoma City Thunder" }
+    "finals": { "champion": "Oklahoma City Thunder", "pointsGuess": null }
   },
   {
     "name": "Helen",
@@ -261,7 +261,7 @@
       },
       "champion": "Oklahoma City Thunder"
     },
-    "finals": { "champion": "Oklahoma City Thunder" }
+    "finals": { "champion": "Oklahoma City Thunder", "pointsGuess": null }
   },
   {
     "name": "Lizzie",
@@ -349,7 +349,7 @@
       },
       "champion": "Oklahoma City Thunder"
     },
-    "finals": { "champion": "Oklahoma City Thunder" }
+    "finals": { "champion": "Oklahoma City Thunder", "pointsGuess": null }
   },
   {
     "name": "Leann",
@@ -437,7 +437,7 @@
       },
       "champion": "Oklahoma City Thunder"
     },
-    "finals": { "champion": "Oklahoma City Thunder" }
+    "finals": { "champion": "Oklahoma City Thunder", "pointsGuess": null }
   },
   {
     "name": "Ford",
@@ -525,6 +525,6 @@
       },
       "champion": "San Antonio Spurs"
     },
-    "finals": { "champion": "San Antonio Spurs" }
+    "finals": { "champion": "San Antonio Spurs", "pointsGuess": null }
   }
 ]

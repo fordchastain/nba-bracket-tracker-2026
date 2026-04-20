@@ -65,5 +65,6 @@ export const ACTUAL_RESULTS: ActualResults = {
   },
   finals: {
     champion: null,
+    pointsTotal: null,
   },
 };

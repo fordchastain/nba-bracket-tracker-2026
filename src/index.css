@@ -245,6 +245,11 @@ body {
 .progress-bar { background: var(--border); border-radius: 99px; height: 6px; overflow: hidden; }
 .progress-fill { background: var(--accent); height: 100%; border-radius: 99px; transition: width 0.4s; }
 
+.tiebreaker-cell { white-space: nowrap; }
+.tiebreaker-guess { font-weight: 600; font-size: 0.95rem; }
+.tiebreaker-diff { font-size: 0.75rem; color: var(--text-muted); margin-left: 6px; }
+.tiebreaker-tbd { font-size: 0.8rem; color: var(--text-muted); font-style: italic; }
+
 .details-btn {
   background: none;
   border: 1px solid var(--border);

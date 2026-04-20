@@ -24,7 +24,7 @@ export interface UserBracket {
   name: string;
   east: ConferenceBracket;
   west: ConferenceBracket;
-  finals: { champion: string };
+  finals: { champion: string; pointsGuess: number | null };
 }
 
 // Actual results — any field can be null when that series hasn't been played yet
@@ -44,7 +44,7 @@ export interface ActualConferenceBracket {
 export interface ActualResults {
   east: ActualConferenceBracket;
   west: ActualConferenceBracket;
-  finals: { champion: string | null };
+  finals: { champion: string | null; pointsTotal: number | null };
 }
 
 export interface ScoreBreakdown {
@@ -63,4 +63,5 @@ export interface ScoredEntry {
   bracket: UserBracket;
   score: number;
   breakdown: ScoreBreakdown;
+  tiebreakDiff: number | null;
 }

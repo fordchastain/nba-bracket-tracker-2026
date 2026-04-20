@@ -5,10 +5,19 @@ import { ACTUAL_RESULTS } from '../data/actualResults';
 import BracketBreakdown from './BracketBreakdown';
 import bracketsData from '../data/brackets.json';
 
+const pointsTotal = ACTUAL_RESULTS.finals.pointsTotal;
+
 const entries: ScoredEntry[] = (bracketsData as Parameters<typeof scoreBracket>[0][]).map(bracket => {
   const breakdown = scoreBracket(bracket, ACTUAL_RESULTS);
-  return { name: bracket.name, bracket, score: breakdown.total, breakdown };
-}).sort((a, b) => b.score - a.score);
+  const tiebreakDiff = pointsTotal != null && bracket.finals.pointsGuess != null
+    ? Math.abs(bracket.finals.pointsGuess - pointsTotal)
+    : null;
+  return { name: bracket.name, bracket, score: breakdown.total, breakdown, tiebreakDiff };
+}).sort((a, b) => {
+  if (b.score !== a.score) return b.score - a.score;
+  if (a.tiebreakDiff == null || b.tiebreakDiff == null) return 0;
+  return a.tiebreakDiff - b.tiebreakDiff;
+});
 
 export default function Leaderboard() {
   const [expanded, setExpanded] = useState<string | null>(null);
@@ -23,6 +32,7 @@ export default function Leaderboard() {
             <th>Name</th>
             <th>Score</th>
             <th>Progress</th>
+            <th>Tiebreaker</th>
             <th></th>
           </tr>
         </thead>
@@ -38,6 +48,14 @@ export default function Leaderboard() {
                     <div className="progress-fill" style={{ width: `${(entry.score / 32) * 100}%` }} />
                   </div>
                 </td>
+                <td className="tiebreaker-cell">
+                  {entry.bracket.finals.pointsGuess != null
+                    ? <span className="tiebreaker-guess">{entry.bracket.finals.pointsGuess}</span>
+                    : <span className="tiebreaker-tbd">TBD</span>}
+                  {entry.tiebreakDiff != null && (
+                    <span className="tiebreaker-diff">off by {entry.tiebreakDiff}</span>
+                  )}
+                </td>
                 <td>
                   <button
                     className="details-btn"
@@ -49,7 +67,7 @@ export default function Leaderboard() {
               </tr>
               {expanded === entry.name && (
                 <tr key={`${entry.name}-breakdown`} className="breakdown-row">
-                  <td colSpan={5}>
+                  <td colSpan={6}>
                     <BracketBreakdown entry={entry} actual={ACTUAL_RESULTS} />
                   </td>
                 </tr>
