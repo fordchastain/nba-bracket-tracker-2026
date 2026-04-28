@@ -42,7 +42,7 @@ export const ACTUAL_RESULTS: ActualResults = {
       {
         team1: 'Oklahoma City Thunder',
         team2: 'Phoenix Suns',
-        winner: null,
+        winner: 'Oklahoma City Thunder',
       },
       { team1: 'LA Lakers', team2: 'Houston Rockets', winner: null },
       {
