@@ -48,7 +48,7 @@ export const ACTUAL_RESULTS: ActualResults = {
       {
         team1: 'San Antonio Spurs',
         team2: 'Portland Trail Blazers',
-        winner: null,
+        winner: 'San Antonio Spurs',
       },
       {
         team1: 'Denver Nuggets',

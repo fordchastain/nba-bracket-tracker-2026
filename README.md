@@ -23,6 +23,18 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ---
 
+## Deploy
+
+The app is configured for GitHub Pages under the `/nba-bracket-tracker-2026/` base path (set in [vite.config.ts](vite.config.ts)).
+
+```bash
+npm run deploy
+```
+
+This runs `npm run build` first (via the `predeploy` script), then pushes the `dist/` folder to the `gh-pages` branch using the `gh-pages` package. GitHub Pages must be configured to serve from that branch in the repo settings.
+
+---
+
 ## How Scoring Works
 
 Each correct pick earns points based on the round. Later rounds are worth more.
