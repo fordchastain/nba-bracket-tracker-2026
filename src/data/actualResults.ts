@@ -23,7 +23,7 @@ export const ACTUAL_RESULTS: ActualResults = {
       {
         team1: 'New York Knicks',
         team2: 'Atlanta Hawks',
-        winner: null,
+        winner: 'New York Knicks',
       },
     ],
     second: [
