@@ -8,7 +8,7 @@ export const ACTUAL_RESULTS: ActualResults = {
       {
         team1: 'Detroit Pistons',
         team2: 'Orlando Magic',
-        winner: null,
+        winner: 'Detroit Pistons',
       },
       {
         team1: 'Cleveland Cavaliers',
@@ -18,7 +18,7 @@ export const ACTUAL_RESULTS: ActualResults = {
       {
         team1: 'Boston Celtics',
         team2: 'Philadelphia 76ers',
-        winner: null,
+        winner: 'Philadelphia 76ers',
       },
       {
         team1: 'New York Knicks',
@@ -44,7 +44,7 @@ export const ACTUAL_RESULTS: ActualResults = {
         team2: 'Phoenix Suns',
         winner: 'Oklahoma City Thunder',
       },
-      { team1: 'LA Lakers', team2: 'Houston Rockets', winner: null },
+      { team1: 'LA Lakers', team2: 'Houston Rockets', winner: 'LA Lakers' },
       {
         team1: 'San Antonio Spurs',
         team2: 'Portland Trail Blazers',
