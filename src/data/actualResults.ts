@@ -13,7 +13,7 @@ export const ACTUAL_RESULTS: ActualResults = {
       {
         team1: 'Cleveland Cavaliers',
         team2: 'Toronto Raptors',
-        winner: null,
+        winner: 'Cleveland Cavaliers',
       },
       {
         team1: 'Boston Celtics',
