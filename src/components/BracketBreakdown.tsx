@@ -1,25 +1,8 @@
-import type {
-  ScoredEntry,
-  ActualResults,
-  ActualMatchup,
-  Matchup,
-} from '../../types/bracket';
+import type { ScoredEntry, ActualResults, Matchup } from '../../types/bracket';
 
 interface Props {
   entry: ScoredEntry;
   actual: ActualResults;
-}
-
-function matchupKey(team1: string, team2: string): string {
-  return [team1, team2].sort().join('|');
-}
-
-function buildActualMap(matchups: ActualMatchup[]): Map<string, string | null> {
-  const map = new Map<string, string | null>();
-  for (const m of matchups) {
-    if (m.team1 && m.team2) map.set(matchupKey(m.team1, m.team2), m.winner);
-  }
-  return map;
 }
 
 function MatchupRow({
@@ -51,11 +34,6 @@ function MatchupRow({
 export default function BracketBreakdown({ entry, actual }: Props) {
   const { bracket, breakdown } = entry;
 
-  const eastFirstMap = buildActualMap(actual.east.first);
-  const eastSecondMap = buildActualMap(actual.east.second);
-  const westFirstMap = buildActualMap(actual.west.first);
-  const westSecondMap = buildActualMap(actual.west.second);
-
   const finalsChamp = actual.finals.champion;
   const finalsCorrect =
     finalsChamp != null && bracket.finals.champion === finalsChamp;
@@ -80,21 +58,21 @@ export default function BracketBreakdown({ entry, actual }: Props) {
           <h4>
             East — First Round <em>(1pt)</em>
           </h4>
-          {bracket.east.first.map((m) => (
+          {bracket.east.first.map((m, i) => (
             <MatchupRow
-              key={matchupKey(m.team1, m.team2)}
+              key={i}
               matchup={m}
-              actualWinner={eastFirstMap.get(matchupKey(m.team1, m.team2))}
+              actualWinner={actual.east.first[i]?.winner}
             />
           ))}
           <h4>
             East — Second Round <em>(2pts)</em>
           </h4>
-          {bracket.east.second.map((m) => (
+          {bracket.east.second.map((m, i) => (
             <MatchupRow
-              key={matchupKey(m.team1, m.team2)}
+              key={i}
               matchup={m}
-              actualWinner={eastSecondMap.get(matchupKey(m.team1, m.team2))}
+              actualWinner={actual.east.second[i]?.winner}
             />
           ))}
           <h4>
@@ -110,21 +88,21 @@ export default function BracketBreakdown({ entry, actual }: Props) {
           <h4>
             West — First Round <em>(1pt)</em>
           </h4>
-          {bracket.west.first.map((m) => (
+          {bracket.west.first.map((m, i) => (
             <MatchupRow
-              key={matchupKey(m.team1, m.team2)}
+              key={i}
               matchup={m}
-              actualWinner={westFirstMap.get(matchupKey(m.team1, m.team2))}
+              actualWinner={actual.west.first[i]?.winner}
             />
           ))}
           <h4>
             West — Second Round <em>(2pts)</em>
           </h4>
-          {bracket.west.second.map((m) => (
+          {bracket.west.second.map((m, i) => (
             <MatchupRow
-              key={matchupKey(m.team1, m.team2)}
+              key={i}
               matchup={m}
-              actualWinner={westSecondMap.get(matchupKey(m.team1, m.team2))}
+              actualWinner={actual.west.second[i]?.winner}
             />
           ))}
           <h4>

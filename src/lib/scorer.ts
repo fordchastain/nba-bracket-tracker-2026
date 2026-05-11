@@ -6,29 +6,15 @@ import type {
   Matchup,
 } from '../../types/bracket';
 
-function matchupKey(team1: string, team2: string): string {
-  return [team1, team2].sort().join('|');
-}
-
-function buildActualMap(matchups: ActualMatchup[]): Map<string, string> {
-  const map = new Map<string, string>();
-  for (const m of matchups) {
-    if (m.team1 && m.team2 && m.winner) {
-      map.set(matchupKey(m.team1, m.team2), m.winner);
-    }
-  }
-  return map;
-}
-
 function scoreRound(
   userMatchups: Matchup[],
   actualMatchups: ActualMatchup[],
   pts: number
 ): number {
-  const actualMap = buildActualMap(actualMatchups);
-  return userMatchups.reduce((total, m) => {
-    const actual = actualMap.get(matchupKey(m.team1, m.team2));
-    return total + (actual != null && actual === m.winner ? pts : 0);
+  return userMatchups.reduce((total, user, i) => {
+    const actual = actualMatchups[i];
+    if (!actual?.winner) return total;
+    return total + (user.winner === actual.winner ? pts : 0);
   }, 0);
 }
 
@@ -37,11 +23,8 @@ function scoreMatchup(
   actual: ActualMatchup,
   pts: number
 ): number {
-  if (!actual.team1 || !actual.team2 || !actual.winner) return 0;
-  const sameMatchup =
-    matchupKey(user.team1, user.team2) ===
-    matchupKey(actual.team1, actual.team2);
-  return sameMatchup && user.winner === actual.winner ? pts : 0;
+  if (!actual.winner) return 0;
+  return user.winner === actual.winner ? pts : 0;
 }
 
 export function scoreBracket(
