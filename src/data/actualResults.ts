@@ -30,7 +30,7 @@ export const ACTUAL_RESULTS: ActualResults = {
       {
         team1: 'Detroit Pistons',
         team2: 'Cleveland Cavaliers',
-        winner: null,
+        winner: 'Cleveland Cavaliers',
       },
       {
         team1: 'New York Knicks',
@@ -38,8 +38,12 @@ export const ACTUAL_RESULTS: ActualResults = {
         winner: 'New York Knicks',
       },
     ],
-    finals: { team1: null, team2: null, winner: null },
-    champion: null,
+    finals: {
+      team1: 'Cleveland Cavaliers',
+      team2: 'New York Knicks',
+      winner: 'New York Knicks',
+    },
+    champion: 'New York Knicks',
   },
   west: {
     first: [
@@ -61,14 +65,22 @@ export const ACTUAL_RESULTS: ActualResults = {
       },
     ],
     second: [
-      { team1: 'Oklahoma City Thunder', team2: 'LA Lakers', winner: null },
+      {
+        team1: 'Oklahoma City Thunder',
+        team2: 'LA Lakers',
+        winner: 'Oklahoma City Thunder',
+      },
       {
         team1: 'San Antonio Spurs',
         team2: 'Minnesota Timberwolves',
-        winner: null,
+        winner: 'San Antonio Spurs',
       },
     ],
-    finals: { team1: null, team2: null, winner: null },
+    finals: {
+      team1: 'Oklahoma City Thunder',
+      team2: 'San Antonio Spurs',
+      winner: null,
+    },
     champion: null,
   },
   finals: {
