@@ -79,9 +79,9 @@ export const ACTUAL_RESULTS: ActualResults = {
     finals: {
       team1: 'Oklahoma City Thunder',
       team2: 'San Antonio Spurs',
-      winner: null,
+      winner: 'San Antonio Spurs',
     },
-    champion: null,
+    champion: 'San Antonio Spurs',
   },
   finals: {
     champion: null,
